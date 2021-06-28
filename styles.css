@@ -1,0 +1,152 @@
+   :root {
+       font: size 18px;
+
+       --dark-cyan: hsl(185, 75%, 39%);
+       --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+       --dark-grayish-blue: hsl(227, 10%, 46%);
+       --dark-gray: hsl(0, 0%, 59%);
+
+   }
+   .attribution {
+    position: relative;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .attribution a {
+    color: antiquewhite;
+  }
+  
+
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+
+   body {
+       font-family: "Kumbh Sans", sans-serif;
+   
+      
+   }
+
+   section {
+       background-color: var(--dark-cyan);
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       overflow: hidden;
+       
+
+   }
+  
+
+   .card {
+       width: 350px;
+       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+
+       text-align: center;
+       border-radius: 20px;
+       background: white;
+       position: relative;
+       overflow: hidden;
+      
+   }
+
+   .card_header {
+       background-image: url(images/bg-pattern-card.svg);
+       height: 150px;
+       background-size: cover;
+       border-radius: 20px 20px 0 0;
+   }
+
+   .image_holder {
+       width: 105px;
+       height: 105px;
+       border-radius: 50%;
+       border: 5px solid white;
+       overflow: hidden;
+       margin: -52px auto 30px auto;
+   }
+
+   .image-holder img {
+       width: 100%;
+       height: auto;
+       display: block;
+
+   }
+
+   .card_body {
+       padding: 0 30px 20px;
+   }
+
+   .name_age {
+       font-size: 1.1rem;
+       margin-bottom: 12px;
+   }
+
+   .city_name {
+       font-size: 0.9rem;
+
+   }
+
+   .age,
+   .meta,
+   .city_name {
+       font-weight: 400;
+       opacity: 0.5;
+   }
+
+   .card_footer {
+       border-top: 1px solid hsl(0, 3%, 86%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 0 25px;
+   }
+
+   .card_footer .items {
+       flex: 1;
+       height: 100px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .age {
+       padding: 0 0 0 6px;
+   }
+
+   .card_footer .items .value {
+       font-size: 1.1rem;
+       padding-bottom: 10px;
+   }
+
+   .card_footer .items .meta {
+       font-size: 0.6rem;
+       letter-spacing: 1px;
+
+   }
+   /* Adding Animations of Circles In The Top And bottom */
+
+   .top-img,
+   .bot-img {
+       position: fixed;
+   }
+
+   .top-img {
+       bottom: 38%;
+       right: 50%;
+   }
+
+   .bot-img {
+       top: 50%;
+       left: 50%;
+   }
+   /* End Of the Animation Section  */
